@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Socket io</title>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src='/bower_components/moment/min/moment.min.js'>  </script>
+    <script type="text/javascript" src="main.js"></script>
+     <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Mensajes</h1>
+    <div id="messages">
+
+    </div>
+
+      <form class="" onsubmit="return addMessage(this)">
+      <!-- <button type="submit" name="button">Add a new message</button> -->
+      <div class="username">
+          <input type="text" id=username placeholder="Your name" value=Guest required>
+      </div>
+      <div class="link">
+          <input type="text" id=linkAddress placeholder="Link" required>
+      </div>
+      <div class="message-input">
+        <textarea type="text" id="message" placeholder="Enter a message" value="" required></textarea>
+      </div>
+      <input class=sendMessageButton type="submit" name="name" value="Send!">
+  </form>
+
+</body>
+</html>
